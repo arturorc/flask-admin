@@ -109,7 +109,7 @@
 {% endmacro %}
 
 {% macro add_modal_button(url='', title='', content='', modal_window_id='fa_modal_window', btn_class='icon') %}
-  <a class="{{ btn_class }}" data-target="#{{ modal_window_id }}" title="{{ title }}" href="{{ url }}" data-toggle="modal">
+  <a class="{{ btn_class }} nav-link" data-target="#{{ modal_window_id }}" title="{{ title }}" href="#" data-remote="{{ url }}" data-toggle="modal">
     {{ content|safe }}
   </a>
 {% endmacro %}
@@ -240,6 +240,7 @@
   <script src="{{ admin_static.url(filename='vendor/x-editable/js/bootstrap3-editable.min.js', v='1.5.1.1') }}"></script>
   {% endif %}
   <script src="{{ admin_static.url(filename='admin/js/form.js', v='1.0.1') }}"></script>
+  <script src="{{ admin_static.url(filename='bootstrap/bootstrap4/form.js') }}"></script>
 {% endmacro %}
 
 {% macro extra() %}
