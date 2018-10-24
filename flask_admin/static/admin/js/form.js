@@ -61,9 +61,6 @@
           }
         };
 
-        if ($el.attr('data-allow-blank'))
-          opts['allowClear'] = true;
-
         opts['multiple'] = multiple;
 
         $el.select2(opts);
@@ -301,9 +298,6 @@
                 var opts = {
                     width: 'resolve'
                 };
-
-                if ($el.attr('data-allow-blank'))
-                    opts['allowClear'] = true;
 
                 if ($el.attr('data-tags')) {
                     $.extend(opts, {
