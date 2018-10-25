@@ -296,7 +296,8 @@
         switch (name) {
             case 'select2':
                 var opts = {
-                    width: 'resolve'
+                    width: 'resolve',
+                    containerCssClass: ':all:'
                 };
 
                 if ($el.attr('data-tags')) {
@@ -326,6 +327,7 @@
 
                 var opts = {
                     width: 'resolve',
+                    containerCssClass: ':all:',
                     tags: tags,
                     tokenSeparators: tokenSeparators,
                     formatNoMatches: function() {
